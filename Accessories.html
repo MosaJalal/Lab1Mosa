@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body style="background-color: darkslategray;">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Produkter.html">Produkter</a>
+        <a href="Accessories.html">Accessories</a>
+        <a href="Kontakt.html">Kontakt</a>
+        <a href="Oss.html">Om Oss</a>
+    </nav>
+
+    <h1>Våra Accessoarer</h1>
+
+    <div class="listProduct">
+        <div class="item">
+            <img src="Images/Hijab1.png" alt="">
+            <h2>Khimar</h2>
+            <div class="pris">189kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Khimar', 189, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Images/Hijab2.png" alt="">
+            <h2>Khimar Saudi</h2>
+            <div class="pris">195kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Khimar Saudi', 195, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="Images/Hijab3.png" alt="">
+            <h2>Classic Hijab</h2>
+            <div class="pris">55kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Classic Hijab', 55, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Images/Hijab4.png" alt="">
+            <h2>Chiffon Hijab</h2>
+            <div class="pris">50kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Chiffon', 50, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Images/Hijab5.png" alt="">
+            <h2>Premium Jersey Hijab</h2>
+            <div class="pris">65kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Premium Jersey Hijab', 65, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Images/Hijab6.png" alt="">
+            <h2>New Jersey Hijab</h2>
+            <div class="pris">45kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('New Jersey Hijab', 45, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Images/Hijab7.png" alt="">
+            <h2>Stretchy Hijab</h2>
+            <div class="pris">70kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Stretchy Hijab', 70, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="Images/Hijab8.png" alt="">
+            <h2>Luxury Hijab</h2>
+            <div class="pris">59kr</div>
+            <div>
+                <input class="input-box1" type="number" id="quantity1" value="1" min="1">
+                <button class="button" onclick="addToCart('Luxury Hijab', 70, 'quantity1')">Lägg till i kundvagn</button>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartitem"></ul>
+            <p>Total: SEK<span id="carttotal">0.00</span></p>
+            <button class="button checkout-button" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+</body>
+</html>
